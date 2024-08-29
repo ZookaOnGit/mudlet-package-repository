@@ -1,6 +1,4 @@
 local json = require "JSON"
-local zip = require "zip"
---local inspect = require "inspect"
 
 local function readFile(args)
 
