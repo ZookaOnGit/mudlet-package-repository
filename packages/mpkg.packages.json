@@ -42,7 +42,7 @@
                       "version": "1.1"
                 },
                 {
-                       "author": "Zooka",
+                       "author": "Zooka1",
                       "created": "2024-06-29T12:05:08+04:00",
                   "description": "### Description\n\nFunctions and aliases to simulate random dice rolls.\n\n### Usage\n\nThere are three aliaes, diceroll, dicemin and dicemax.  They accept dice in the following format xdy where x is the number of dice, y is the number of sides per dice.  It also allows appending an number to add (or subtract) from the dice roll.  ie. diceroll 2d6+3, or dicemin 3d5-1.  The functions can also be called directly from other scripts; dice.roll(num, sides, append), dice.min(...), dice.max(...)\n\n`> diceroll 2d6+3`\n\n    8",
                      "mpackage": "dice",
@@ -98,5 +98,5 @@
                       "version": "2.3"
                 }
               ],
-   "updated": "Thu Aug 29 06:19:08 2024"
+   "updated": "Thu Aug 29 06:23:16 2024"
 }
