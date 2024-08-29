@@ -13,7 +13,7 @@ end
 local function buildWhatsNew()
 
     -- load up our package listing
-    local packages = json:decode(readFile("../packages/mpkg.packages.json"))
+    local packages = json:decode(readFile("/packages/mpkg.packages.json"))
 
     -- html section preamble
     local whatsNewHtml = [[    <section id="pageContent">
@@ -23,7 +23,7 @@ local function buildWhatsNew()
     -- sort packages by creation time, newest first
     local whatsNew = {}
 
-    for file in io.popen([[ls -c ../packages/*.mpackage | head -n 5]]):lines() do
+    for file in io.popen([[ls -c /packages/*.mpackage | head -n 5]]):lines() do
         local tempStr = string.gsub(file, "packages/", "")
         tempStr = string.gsub(tempStr, ".mpackage", "")
         table.insert(whatsNew, tempStr)
