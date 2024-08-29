@@ -33,7 +33,3 @@
 			</article>
 		</main>
 	</section>
-    <section id="pageContent">
-        <main role="main">
-        <h2>Recent Uploads</h2><br><br></body>
-</html>

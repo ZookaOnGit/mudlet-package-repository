@@ -1,5 +1,5 @@
 # Deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Recreate web page
 
 on:
   # Runs on pushes targeting the default branch
@@ -32,6 +32,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Install luarocks modules
+        run: |
+          luarocks install json-lua
+
+      - name: Compile webpage
+        run: |
+          lua html/build-html.lua
+          cp html/style.css .
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
