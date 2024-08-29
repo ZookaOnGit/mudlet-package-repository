@@ -46,17 +46,13 @@ local function buildWhatsNew()
 end
 
 local function writeWebRepo()
-
-    local header = readFile("web-repo-header.txt")
-    local newPackagesList = buildWhatsNew()
-    local footer = readFile("web-repo-footer.txt")
-
+    
     local file = io.open("../index.html", "w+")
     io.output(file)
 
-    io.write(readFile("web-repo-header.txt"))
+    io.write(readFile("/html/web-repo-header.txt"))
     io.write(buildWhatsNew())
-    io.write(readFile("web-repo-footer.txt"))
+    io.write(readFile("/html/web-repo-footer.txt"))
 
     io.close(file)
 
