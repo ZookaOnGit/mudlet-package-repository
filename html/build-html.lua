@@ -47,7 +47,7 @@ end
 
 local function writeWebRepo()
     
-    local file = io.open("../index.html", "w+")
+    local file = io.open("index.html", "w+")
     io.output(file)
 
     io.write(readFile("/html/web-repo-header.txt"))
