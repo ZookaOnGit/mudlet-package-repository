@@ -5,13 +5,12 @@ mpkg is a command line interface for managing packages used in Mudlet. You can i
 
 ```
 Commands:
-  mpkg install          -- install a new package
-  mpkg list             -- list all installed packages  
+  mpkg install          -- install/upgrade a package
+  mpkg list             -- list all installed packages
   mpkg remove           -- remove an existing package
-  mpkg search           -- search for a package via name and description
+  mpkg search           -- search for a package
   mpkg show             -- show detailed information about a package
-  mpkg update           -- update your package listing
-  mpkg upgrade          -- upgrade a specific package
+  mpkg update           -- update package listing from repository
 ```
 ### See Also
 
